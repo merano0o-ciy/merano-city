@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --bodyColor: #fbfcfc;
+  --mainColor: #232f3f;
+  --zeroColor: #dbddf1;
+  --betaColor: #fff;
+  --firstColor: #fc4a2aea;
+  --secondColor: #E8F6EF;
+  --thirdColor: #313131;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dcf0f6;
+
+}
+
+.header p {
+  font-size: 25px;
+  color: #232f3f;
+  padding: 0 8%;
+
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 80px;
+  margin-left: 8px;
+  margin-right: 50rem;
+}
+
+.padded {
+  padding: 0 30%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  padding: 80px 0;
+
+}
+
+h5 {
+  color: blue;
+}
+
+.gallery img {
+  width: 100%;
+  height: 15em;
+  padding: 13px 18px 0;
+  cursor: pointer;
+  background-color: #dcf0f6;
+  border-radius: 15% 0 0 0;
+}
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
+.card-body {
+  background-color: #dcf0f6;
+  color: #232f3f;
+  border-radius: 0 0 15% 0;
+}
+.cardf-body {
+  background-color: #232f3f;
+  color: #dcf0f6;
+  border-radius: 0 15% 0 15%;
+  padding: 10px;
+}
+.cardf-body img{
+  padding: 13px 18px 13px;
+  border-radius: 15% 15% 15% 15%;
+}
+
+.card {
+  width: 100%;
+  height: 35rem;
+  padding: 0 20px;
+}
+.cardf {
+  width: 100%;
+  padding: 0 20px;
+}
+
+
+/* ---section-form--- */
+.section__form {
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section__form-title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+
+
+#submit {
+  width: 50%;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+#submit:hover {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  box-shadow: 0px 0px 2px var(--secondColor);
+}
+
+/* ---footer--- */
+.footer {
+  margin: 80px 0;
+  text-align: center;
+  height: 20px;
+  padding: 0 42%;
+}
+
+.footer__text {
+  font-size: 1rem;
+  color: var(--mainColor);
+  cursor: default;
+  transition: all 0.25s ease;
+}
+
+.footer__text:hover {
+  letter-spacing: 2px;
+
+}
+
+
+/* @media query */
+
+@media only screen and (max-width: 1200px) {
+  .navbar-brand img {
+    margin-left: 0;
+    margin-right: 32rem;
+  }
+
+  .nav-container h1 {
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {
+  .navbar-brand img {
+
+    margin-right: 12rem;
+  }
+
+  .nav-container h1 {
+    font-size: 28px;
+  }
+  .footer__text p{
+    font-size: 10px;
+  }
+  .footer {
+    padding: 0 30%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand img {
+
+    margin-right: 7rem;
+  }
+
+  .nav-container h1 {
+    font-size: 24px;
+  }
+  .footer__text p{
+    font-size: 10px;
+  }
+  .footer {
+    padding: 0 30%;
+  }
+
+  .go .fcon {
+    margin: 0 10px !important;
+  }
+  
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .footer {
+    padding: 0 33%;
+  }
+  .footer__text p{
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  .section__form-title {
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+
+  #submit {
+    width: 140%;
+  }
+
+  .nav-container h1 {
+    font-size: 18px;
+  }
+
+  .header p {
+    font-size: 21px;
+    color: #232f3f;
+    padding: 0 8%;
+
+  }
+
+  .navbar-brand img {
+    margin-right: 30px;
+  }
+
+  .card-body a {
+    font-size: 14;
+  }
+
+}
+
+
+
+.snap {
+  color: var(--thirdColor);
+  cursor: pointer;
+}
+.what {
+  color: var(--thirdColor);
+  cursor: pointer;
+}
+
+.tik {
+  color: var(--thirdColor);
+  cursor: pointer;
+}
+
+.you {
+  color: var(--thirdColor);
+  cursor: pointer;
+}
+
+.int {
+  color: var(--thirdColor);
+  cursor: pointer;
+}
+
+.go {
+  display: flex;
+  justify-content: center;
+} 
+
+.go .fcon {
+  margin: 5px 30px;
+}
